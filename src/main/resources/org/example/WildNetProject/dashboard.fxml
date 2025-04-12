@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane styleClass="mainpane" stylesheets="@cssFiles/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.WildNetProject.dashboardController">
+   <children>
+      <VBox alignment="CENTER" layoutX="66.4" layoutY="11.2" prefHeight="618.0" prefWidth="862.0" spacing="20" stylesheets="@cssFiles/dashboard.css" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="66.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="11.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="76.0" prefWidth="599.0" styleClass="title-text" stylesheets="@cssFiles/dashboard.css" text="WELCOME TO WILDNET" textAlignment="CENTER" wrapText="true" />
+            <HBox alignment="CENTER" spacing="20">
+               <JFXButton onAction="#goToGameHome" styleClass="button-game" stylesheets="@cssFiles/dashboard.css" text="Gaming Zone" />
+               <JFXButton onAction="#goToLearningCenter" styleClass="button-learn" stylesheets="@cssFiles/dashboard.css" text="Learning Center" />
+            </HBox>
+            <JFXButton fx:id="community" onAction="#goToCommunityHome" prefWidth="615.0" styleClass="button-community" stylesheets="@cssFiles/dashboard.css" text="Community Hub" />
+            <HBox alignment="CENTER_LEFT" prefHeight="56.0" prefWidth="761.0" spacing="20" style="-fx-border-radius: 50px;" styleClass="footer">
+               <Text fill="WHITE" styleClass="group-text" text=" © Department of Computer Science" textAlignment="CENTER" wrappingWidth="390.0">
+                  <font>
+                     <Font size="10.0" />
+                  </font></Text>
+               <StackPane alignment="CENTER_RIGHT" prefHeight="56.0" prefWidth="523.0" stylesheets="@cssFiles/dashboard.css" HBox.hgrow="ALWAYS">
+                  <JFXButton onAction="#goToTheme" prefHeight="50.0" prefWidth="192.0" styleClass="setting-button" text="Settings">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon fill="WHITE" glyphName="GEAR" size="1.3em" />
+                     </graphic>
+                  </JFXButton>
+               </StackPane>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="username" graphicTextGap="8.0" layoutX="834.0" layoutY="32.0" prefHeight="54.0" prefWidth="177.0" styleClass="userid" text="YourUserName">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fx:id="img" fitHeight="36.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Label>
+   </children>
+</AnchorPane>

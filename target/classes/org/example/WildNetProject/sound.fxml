@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1024.0" stylesheets="@cssFiles/sound-setting.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.WildNetProject.SoundSettingsController">
+    <children>
+        <HBox layoutX="143.0" layoutY="96.0" prefHeight="640.0" prefWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox alignment="TOP_CENTER" prefHeight="640.0" prefWidth="334.0" styleClass="vbox1">
+                <!-- Navigation Panel -->
+                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text1" text="Setting" wrappingWidth="176.630859375" />
+                <Button fx:id="btnTheme" contentDisplay="TOP" mnemonicParsing="false" onAction="#goToTheme" prefHeight="138.0" prefWidth="257.0" styleClass="nav-button" text="Theme">
+                    <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@SystemImages/Display.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets top="15.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnAccount" contentDisplay="TOP" mnemonicParsing="false" onAction="#goToUser" styleClass="nav-button" text="Account Setting">
+                    <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@SystemImages/UserMenu.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnSound" contentDisplay="TOP" mnemonicParsing="false" onAction="#goToSound" prefHeight="138.0" prefWidth="267.0" styleClass="nav-button" text="Sounds">
+                    <graphic>
+                        <ImageView fitHeight="75.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@SystemImages/Speaker.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#goToDashboard" styleClass="nav-button" text="Dashboard">
+                    <VBox.margin>
+                        <Insets top="25.0" />
+                    </VBox.margin>
+                </Button>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="640.0" prefWidth="690.0" styleClass="vbox2">
+                <Text styleClass="header-text" text="Sound Settings" textAlignment="CENTER" wrappingWidth="438.9228515625">
+                    <font>
+                        <Font size="50.0" />
+                    </font>
+                </Text>
+                <HBox prefHeight="179.0" prefWidth="610.0" />
+                <VBox prefHeight="487.0" prefWidth="610.0" styleClass="content-box">
+                    <HBox prefHeight="147.0" prefWidth="610.0" spacing="10" styleClass="content-row">
+                        <Text styleClass="sub-text" text="Background Music" wrappingWidth="228.7021484375" />
+                        <ToggleButton fx:id="calmMusicButton" prefHeight="106.0" prefWidth="115.0" styleClass="color-button">
+                            <graphic>
+                                <ImageView fitHeight="118.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@SystemImages/CalmMusic.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </ToggleButton>
+                        <ToggleButton fx:id="funMusicButton" prefHeight="106.0" prefWidth="115.0" styleClass="color-button">
+                            <graphic>
+                                <ImageView fitHeight="113.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@SystemImages/FunMusic.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </ToggleButton>
+                        <ToggleButton fx:id="customMusicButton" prefHeight="106.0" prefWidth="115.0" styleClass="color-button">
+                            <graphic>
+                                <ImageView fitHeight="108.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@SystemImages/CustomMusic.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </ToggleButton>
+                    </HBox>
+                    <HBox prefHeight="66.0" prefWidth="610.0" />
+                    <HBox prefHeight="50.0" prefWidth="610.0" spacing="10" styleClass="content-row">
+                        <Text styleClass="sub-text" text="Music Intensity" wrappingWidth="189.7197265625" />
+                        <Slider fx:id="musicSlider" prefHeight="38.0" prefWidth="289.0" />
+                        <Button fx:id="muteMusicButton" prefHeight="34.0" prefWidth="97.0" styleClass="mute-button" text="Mute" />
+                    </HBox>
+                    <HBox prefHeight="162.0" prefWidth="610.0" />
+                    <HBox alignment="CENTER" prefHeight="89.0" prefWidth="610.0" spacing="20" styleClass="bottom-buttons">
+                        <Button fx:id="btnApply" onAction="#applySettings" prefHeight="40.0" prefWidth="150.0" styleClass="apply-button" text="Apply" />
+                        <Button fx:id="btnRevert" onAction="#revertSettings" prefHeight="40.0" prefWidth="179.0" styleClass="revert-button" text="Revert to Default" />
+                    </HBox>
+                </VBox>
+            </VBox>
+        </HBox>
+    </children>
+</AnchorPane>

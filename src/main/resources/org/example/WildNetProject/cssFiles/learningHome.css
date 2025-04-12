@@ -1,0 +1,108 @@
+.mainpane {
+  -fx-pref-width: 1024px;
+  -fx-pref-height: 640px;
+ -fx-background-color: linear-gradient(rgba(151, 6, 219, 0.98) 31.59%, rgba(138, 9, 166, 0.98) 57%);
+  -fx-background-image: url('../SystemImages/picture1.png');
+}
+
+.title-text {
+  -fx-font-family: "Montserrat", sans-serif;
+  -fx-font-size: 70px;
+  -fx-font-weight: 800;
+  -fx-text-fill: #FFFFFF;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 15, 0, 0, 0);
+}
+
+.button-main {
+  -fx-background-radius: 15;
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 10px;
+  -fx-font-weight: 500;
+  -fx-text-fill: #FFFFFF;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.button-main {
+  -fx-background-color: linear-gradient(to bottom right, #FF0000, #FF6347);
+  -fx-pref-width: 60px;
+  -fx-pref-height: 8px;
+}
+
+.button-search {
+  -fx-background-radius: 15;
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 14px;
+  -fx-font-weight: 500;
+  -fx-text-fill: #FFFFFF;
+  -fx-background-color: linear-gradient(to bottom right, #FF6347, #FF0000);
+  -fx-pref-width: 80px;
+  -fx-pref-height: 30px;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.button-search:hover {
+  -fx-background-color: linear-gradient(to bottom right, #FF4500, #FF6347);
+  -fx-cursor: hand;
+}
+
+.button {
+  -fx-background-radius: 5;
+  -fx-background-color: #2E3B55;
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 16px;
+  -fx-font-weight: 400;
+  -fx-text-fill: #FFFFFF;
+  -fx-pref-width: 120px;
+  -fx-pref-height: 40px;
+  -fx-border-color: #4A5F8E;
+  -fx-border-width: 2;
+  -fx-background-insets: 0;
+  -fx-padding: 15;
+}
+
+.button:hover {
+  -fx-background-color: #556789;
+  -fx-cursor: hand;
+}
+
+/* Specific button styles for different categories */
+.button-wildlife, .button-animals, .button-plants, .button-fungi, .button-microorganisms {
+  /* Add specific styles here if needed, or they will inherit .button styles */
+}
+
+.footer {
+  -fx-pref-height: 50px;
+  -fx-alignment: center;
+  -fx-background-color: #333333;
+}
+
+.group-text {
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 20px;
+  -fx-font-weight: 300;
+  -fx-text-fill: #FFFFFF;
+}
+
+.setting-button {
+  -fx-background-radius: 50;
+  -fx-background-color: rgba(255,255,255,0.2);
+  -fx-pref-width: 270px;
+  -fx-pref-height: 60px;
+  -fx-background-insets: 0;
+  -fx-padding: 15px;
+  -fx-graphic: url('../SystemImages/SettingsIcon.png');
+}
+
+.fontawesome-icon {
+  -fx-fill: #FF6347;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+
+/* Add any additional styles you need below */
+
+/* Example of additional styles might include custom colors for different button states or additional elements */
+.labelses{
+    -fx-font-weight:900;
+    -fx-font-size:24;
+
+}

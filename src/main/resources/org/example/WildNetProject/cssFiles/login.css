@@ -1,0 +1,71 @@
+.navbar {
+    -fx-background-color: linear-gradient(rgba(151, 6, 219, 0.98) 31.59%, rgba(138, 9, 166, 0.98) 57%);
+    -fx-pref-width: 330px;
+    -fx-pref-height: 1024px;
+}
+
+.welcome-text {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-line-height: 56.11px;
+    -fx-letter-spacing: 0.14em;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-alignment: center;
+}
+
+.login-pane {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+}
+
+.header-text {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-text-alignment: center;
+}
+
+.header-text1 {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-text-alignment: center;
+}
+
+.text-field, .password-field {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-text-fill: #333;
+    -fx-font-size: 16px;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 5;
+    -fx-border-color: #BDBDBD;
+    -fx-border-width: 1;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #673AB7;
+}
+
+.action-button {
+    -fx-background-color: #673AB7;
+    -fx-text-fill: white;
+    -fx-padding: 12px 24px;
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+}
+
+.action-button:hover {
+    -fx-background-color: #512DA8; /* Slightly darker shade for hover effect */
+    -fx-cursor: hand; /* Changes cursor to pointer */
+}
+
+.image {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 0);
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 8;
+}

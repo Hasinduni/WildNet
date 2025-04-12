@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost [2]">
+  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.52">
+    <root id="1"/>
+    <schema id="2" parent="1" name="information_schema">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <schema id="3" parent="1" name="test">
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </schema>
+    <schema id="4" parent="1" name="wildnet">
+      <Current>1</Current>
+      <LastIntrospectionLocalTimestamp>2024-05-25.13:29:41</LastIntrospectionLocalTimestamp>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </schema>
+    <schema id="5" parent="1" name="phpmyadmin">
+      <CollationName>utf8_bin</CollationName>
+    </schema>
+    <schema id="6" parent="1" name="mysql">
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </schema>
+    <schema id="7" parent="1" name="performance_schema">
+      <CollationName>utf8_general_ci</CollationName>
+    </schema>
+    <table id="8" parent="4" name="userdetails">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <column id="9" parent="8" name="name">
+      <DasType>varchar(30)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="10" parent="8" name="email">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="11" parent="8" name="password">
+      <DasType>varchar(40)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="12" parent="8" name="dob">
+      <DasType>date|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <index id="13" parent="8" name="PRIMARY">
+      <ColNames>name</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="14" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

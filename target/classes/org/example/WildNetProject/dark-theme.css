@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: #333;
+    -fx-text-fill: #eee;
+}
+
+.vbox1 {
+    -fx-background-color: linear-gradient(to bottom, #444, #222);
+}
+
+.nav-button {
+    -fx-background-color: #555;
+    -fx-text-fill: #eee;
+}
+
+.vbox2 {
+    -fx-background-color: #444;
+    -fx-text-fill: #eee;
+}
+
+.toggle-button {
+    -fx-background-color: #555;
+    -fx-text-fill: #eee;
+}
+
+.mode-button {
+    -fx-background-color: #666;
+    -fx-text-fill: #eee;
+}

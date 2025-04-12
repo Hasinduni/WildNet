@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Habitat Game</title>
+    <link rel="stylesheet" href="animal-habitat.css">
+</head>
+<body>
+    <header>
+        <h1>Animal Habitat Matching Game</h1>
+    </header>
+    <div class="habitat-container">
+        <div class="animals">
+            <div class="animal" draggable="true" data-habitat="savannah"><img src="images/lion.jpg" alt="Lion"></div>
+            <div class="animal" draggable="true" data-habitat="forest"><img src="images/elephant.jpg" alt="Elephant"></div>
+            <div class="animal" draggable="true" data-habitat="savannah"><img src="images/giraffe.jpg" alt="Giraffe"></div>
+            <div class="animal" draggable="true" data-habitat="ocean"><img src="images/shark.jpg" alt="Shark"></div>
+            <div class="animal" draggable="true" data-habitat="forest"><img src="images/tiger.jpg" alt="Tiger"></div>
+        </div>
+        <div class="habitats">
+            <div class="habitat" data-habitat="savannah">Savannah</div>
+            <div class="habitat" data-habitat="forest">Forest</div>
+            <div class="habitat" data-habitat="ocean">Ocean</div>
+        </div>
+    </div>
+    <div id="habitat-result"></div>
+    <button id="submit-button">Submit Classifications</button>
+    <br>
+    <footer>
+        <p>Developed By The WildNet Team Using AI</p>
+    </footer>
+    <script src="animal-habitat.js"></script>
+</body>
+</html>

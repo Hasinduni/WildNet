@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Classification Game</title>
+    <link rel="stylesheet" href="animal-classification.css">
+</head>
+<body>
+    <header>
+        <h1>Animal Classification Challenge</h1>
+    </header>
+    <div class="classification-container">
+        <div class="animals">
+            <div class="animal" draggable="true" data-class="mammal"><img src="images/lion.jpg" alt="Lion"></div>
+            <div class="animal" draggable="true" data-class="bird"><img src="images/eagle.jpg" alt="Eagle"></div>
+            <div class="animal" draggable="true" data-class="reptile"><img src="images/snake.jpg" alt="Snake"></div>
+            <div class="animal" draggable="true" data-class="mammal"><img src="images/rabbit.jpg" alt="Rabbit"></div>
+            <div class="animal" draggable="true" data-class="mammal"><img src="images/zebra.jpg" alt="Zebra"></div>
+            <div class="animal" draggable="true" data-class="none"><img src="images/octopus.jpg" alt="Octopus"></div>
+        </div>
+        <div class="classifications">
+            <div class="classification" data-class="mammal">Mammals</div>
+            <div class="classification" data-class="bird">Birds</div>
+            <div class="classification" data-class="reptile">Reptiles</div>
+            <div class="classification" data-class="none">None of these</div>
+        </div>
+    </div>
+    <div id="classification-result"></div>
+    <button id="submit-button">Submit Classifications</button>
+    <br>
+    <footer>
+        <p>Developed By The WildNet Team Using AI</p>
+    </footer>
+    <script src="animal-classification.js"></script>
+</body>
+</html>

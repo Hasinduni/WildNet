@@ -1,0 +1,82 @@
+.mainpane {
+  -fx-pref-width: 1024px;
+  -fx-pref-height: 640px;
+ -fx-background-color: linear-gradient(rgba(151, 6, 219, 0.98) 31.59%, rgba(138, 9, 166, 0.98) 57%);
+  -fx-background-image: url('../SystemImages/picture1.png');
+}
+
+.title-text {
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 50px;
+  -fx-font-weight: 800;
+  -fx-text-fill: linear-gradient(to right, #E0A2FF, #C882FF); /* Gradient text fill */
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 2); /* Adding a shadow for depth */
+}
+
+
+.button-game, .button-learn, .button-community {
+  -fx-background-radius: 15;
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 20px;
+  -fx-font-weight: 500;
+  -fx-text-fill: #FFFFFF;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.button-game {
+  -fx-background-color: linear-gradient(to bottom right, #FF0000, #FF6347);
+  -fx-pref-width: 300px;
+  -fx-pref-height: 300px;
+}
+
+.button-learn {
+  -fx-background-color: linear-gradient(to bottom right, #32CD32, #008000);
+  -fx-pref-width: 300px;
+  -fx-pref-height: 300px;
+}
+
+.button-community {
+  -fx-background-color: linear-gradient(to right, #FFFF00, #FFD700);
+  -fx-pref-width: 620px;
+  -fx-pref-height: 115px;
+}
+
+.footer {
+  -fx-pref-height: 50px;
+  -fx-alignment: center;
+  -fx-background-color: #333333;
+}
+
+.setting-button {
+  -fx-background-radius: 20; /* Smaller radius for a subtler rounded effect */
+  -fx-background-color: rgba(255, 255, 255, 0.2);
+  -fx-pref-width: 176px; /* Adjusted to a smaller width */
+  -fx-pref-height: 56px; /* Height adjusted to fill container height */
+  -fx-background-insets: 0;
+  -fx-padding: 10px; /* Reduced padding for a more compact look */
+  -fx-text-fill: #FFFFFF; /* Ensuring text color is white */
+  -fx-font-weight: bold; /* Make the text bold */
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 10, 0, 0, 2); /* Subtle shadow for depth */
+}
+
+.group-text {
+  -fx-font-size: 25px; /* Increased font size */
+  -fx-font-weight: bold; /* Bold text for emphasis */
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-text-fill: #FFFFFF;
+}
+
+.userid {
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-border-width: 2;
+  -fx-border-color: none;
+  -fx-background-color: rgba(0, 0, 0, 0.3); /* Light transparent background */
+  -fx-padding: 10px; /* Padding inside the label */
+  -fx-graphic-text-gap: 10px; /* Space between icon and text */
+  -fx-text-fill: white; /* Color of the text */
+  -fx-font-size: 15px; /* Font size */
+  -fx-font-weight: bold; /* Making the font bold */
+  -fx-alignment: center-left; /* Align text and icon inside the label */
+  -fx-background-radius: 5; /* Rounded corners for the background */
+  -fx-border-radius: 5;
+}

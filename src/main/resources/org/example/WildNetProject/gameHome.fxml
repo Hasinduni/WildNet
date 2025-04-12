@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane styleClass="mainpane" stylesheets="@cssFiles/gameHome.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.WildNetProject.gameHomeController">
+    <children>
+        <HBox alignment="CENTER" onMouseClicked="#goToDashboard">
+            <VBox prefHeight="126.0" prefWidth="0.0" />
+            <FontAwesomeIcon glyphName="HOME" layoutX="21.0" layoutY="83.0" size="80" stroke="WHITE" tabSize="20" text="" textAlignment="CENTER" wrappingWidth="151.6455841064453" />
+        </HBox>
+        <Text fill="WHITE" layoutX="438.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gaming Zone" textAlignment="CENTER" wrappingWidth="582.0">
+            <font>
+                <Font name="System Bold" size="70.0" />
+            </font>
+        </Text>
+        <ButtonBar layoutX="280.0" layoutY="129.0" prefHeight="40.0" prefWidth="711.0">
+            <buttons>
+                <RadioButton mnemonicParsing="false" styleClass="button-radio" text="Arcade" />
+                <RadioButton mnemonicParsing="false" styleClass="button-radio" text="Learning" />
+                <RadioButton mnemonicParsing="false" styleClass="button-radio" text="Preschool" />
+                <RadioButton mnemonicParsing="false" styleClass="button-radio" text="Primary" />
+                <RadioButton mnemonicParsing="false" styleClass="button-radio" text="Secondary" />
+                <RadioButton mnemonicParsing="false" styleClass="button-radio" text="Advanced" />
+                <Button id="button-filter" mnemonicParsing="false" styleClass="button-filter" stylesheets="@cssFiles/gameHome.css" text="Filter" />
+            </buttons>
+        </ButtonBar>
+        <ComboBox editable="true" layoutX="25.0" layoutY="128.0" prefHeight="39.0" prefWidth="170.0" promptText="Select Difficulty" styleClass="dropdown" visibleRowCount="3">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Easy" />
+                    <String fx:value="Medium" />
+                    <String fx:value="Hard" />
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <VBox layoutX="25.0" layoutY="190.0" prefHeight="419.0" prefWidth="970.0">
+            <children>
+                <HBox prefHeight="261.0" prefWidth="1006.0">
+                    <children>
+                        <JFXButton fx:id="animalclassification" onAction="#handleGameSelection" prefHeight="244.0" prefWidth="252.0" styleClass="game-button1" />
+                        <JFXButton fx:id="animalexploration" onAction="#handleGameSelection" prefHeight="208.0" prefWidth="252.0" styleClass="game-button2" />
+                        <JFXButton fx:id="animalfoodchain" onAction="#handleGameSelection" prefHeight="209.0" prefWidth="247.0" styleClass="game-button3" />
+                        <JFXButton fx:id="animalhabitat" onAction="#handleGameSelection" prefHeight="261.0" prefWidth="253.0" styleClass="game-button4" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="54.0" prefWidth="1006.0" />
+                <HBox prefHeight="156.0" prefWidth="956.0">
+                    <children>
+                        <JFXButton fx:id="animalpictureguess" alignment="BASELINE_LEFT" onAction="#handleGameSelection" prefHeight="139.0" prefWidth="140.0" styleClass="game-button5" />
+                        <JFXButton fx:id="animalquiz" alignment="BASELINE_LEFT" onAction="#handleGameSelection" prefHeight="139.0" prefWidth="140.0" styleClass="game-button6" />
+                        <JFXButton fx:id="endangeredspeciesquiz" alignment="BASELINE_LEFT" onAction="#handleGameSelection" prefHeight="139.0" prefWidth="140.0" styleClass="game-button7" />
+                        <JFXButton fx:id="slidingpuzzlegame" alignment="BASELINE_LEFT" onAction="#handleGameSelection" prefHeight="139.0" prefWidth="140.0" styleClass="game-button8" />
+                        <JFXButton fx:id="wildlifeadventure" alignment="BASELINE_LEFT" onAction="#handleGameSelection" prefHeight="139.0" prefWidth="140.0" styleClass="game-button9" />
+                        <JFXButton fx:id="wildlifeconservation" alignment="BASELINE_LEFT" onAction="#handleGameSelection" prefHeight="139.0" prefWidth="140.0" styleClass="game-button10" />
+                        <JFXButton fx:id="wildlifememorygame" alignment="BASELINE_LEFT" onAction="#handleGameSelection" prefHeight="139.0" prefWidth="140.0" styleClass="game-button11" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

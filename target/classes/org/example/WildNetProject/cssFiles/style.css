@@ -1,0 +1,46 @@
+@font-face {
+    font-family:'CustomFont';
+    src:url('../Fonts/Roboto-Regular.ttf');
+
+}
+.navebars{
+    -fx-background-color:  linear-gradient(rgba(151, 6, 219, 0.98) 31.59%, rgba(138, 9, 166, 0.98) 57%);
+    -fx-background-image: url('../SystemImages/Picture2.png');
+}
+
+.text{
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-weight: 400;
+
+    -fx-text-alignment: left;
+    -fx-text-fill:#EFE0E0;
+
+}
+.imagevi{
+    -fx-pref-width: 185px;
+    -fx-pref-height: 376px
+}
+
+.text1{
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-weight: 400;
+    -fx-text-alignment: left;
+}
+
+.btn{
+    -fx-pref-width: 78px;
+    -fx-pref-height: 128px;
+    -fx-text-fill: #DBC8C8;
+}
+
+.txt2{
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-pref-width: 300;
+    -fx-font-weight: 400;
+    -fx-text-alignment: left;
+}
+#pass{
+    -fx-pref-width: 80px;
+    -fx-pref-height: 20px;
+    -fx-font-family: "Roboto", sans-serif;
+}

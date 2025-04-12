@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Adjusted for better top alignment */
+    height: 100vh;
+    overflow: hidden; /* Prevent overall page scroll */
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 20px 0; /* More padding for a better visual */
+    text-align: center;
+    font-size: 20px; /* Larger font size for better readability */
+}
+
+.classification-container {
+    display: flex;
+    justify-content: space-around; /* Adjusted for spacing */
+    width: 80%;
+    margin: 20px 0;
+    height: 60vh; /* Limit height to fit within view */
+    overflow-y: auto; /* Enable scrolling within the container */
+}
+
+.animals, .classifications {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    max-height: 60vh; /* Limit height to manage scroll */
+    overflow-y: auto; /* Enable scrolling for each column */
+}
+
+.animal, .classification {
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.animal img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#classification-result {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#submit-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #45a049;
+}

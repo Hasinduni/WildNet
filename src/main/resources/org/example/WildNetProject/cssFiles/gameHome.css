@@ -1,0 +1,133 @@
+.mainpane {
+  -fx-pref-width: 1024px;
+  -fx-pref-height: 700px;
+  -fx-background-color: linear-gradient(rgba(151, 6, 219, 0.98) 31.59%, rgba(138, 9, 166, 0.98) 57%);
+  -fx-background-image: url('../SystemImages/picture1.png');
+}
+
+.title-text {
+  -fx-font-family: "Montserrat", sans-serif;
+  -fx-font-size: 70px;
+  -fx-font-weight: 800;
+  -fx-text-fill: #FFFFFF;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 15, 0, 0, 0);
+}
+
+.game-button1, .game-button2, .game-button3, .game-button4, .game-button5, .game-button6, .game-button7, .game-button8, .game-button9, .game-button10, .game-button11 {
+  -fx-background-color: transparent;
+  -fx-background-size: cover;
+  -fx-border-color: white;
+  -fx-border-width: 2px;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 10, 0, 0, 0);
+}
+
+.game-button1 {
+  -fx-background-image: url('../GameZone/GameImages/animal-classification.png');
+}
+.game-button2 {
+  -fx-background-image: url('../GameZone/GameImages/animal-exploration.png');
+}
+.game-button3 {
+  -fx-background-image: url('../GameZone/GameImages/animal-food-chain.png');
+}
+.game-button4 {
+  -fx-background-image: url('../GameZone/GameImages/animal-habitat.png');
+}
+.game-button5 {
+  -fx-background-image: url('../GameZone/GameImages/animal-picture-guess.png');
+}
+.game-button6 {
+  -fx-background-image: url('../GameZone/GameImages/animal-quiz.png');
+}
+.game-button7 {
+  -fx-background-image: url('../GameZone/GameImages/endangered-species-quiz.png');
+}
+.game-button8 {
+  -fx-background-image: url('../GameZone/GameImages/sliding-puzzle-game.png');
+}
+.game-button9 {
+  -fx-background-image: url('../GameZone/GameImages/wildlife-adventure.png');
+}
+.game-button10 {
+  -fx-background-image: url('../GameZone/GameImages/wildlife-conservation.png');
+}
+.game-button11 {
+  -fx-background-image: url('../GameZone/GameImages/wildlife-memory-game.png');
+}
+
+.button-main {
+  -fx-background-radius: 15;
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 10px;
+  -fx-font-weight: 500;
+  -fx-text-fill: #FFFFFF;
+  -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.button-main {
+  -fx-background-color: linear-gradient(to bottom right, #FF0000, #FF6347);
+  -fx-pref-width: 60px;
+  -fx-pref-height: 8px;
+}
+
+.footer {
+  -fx-pref-height: 50px;
+  -fx-alignment: center;
+  -fx-background-color: #333333;
+}
+
+.group-text {
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 20px;
+  -fx-font-weight: 300;
+  -fx-text-fill: #FFFFFF;
+}
+
+.setting-button {
+  -fx-background-radius: 50;
+  -fx-background-color: rgba(255,255,255,0.2);
+  -fx-pref-width: 270px;
+  -fx-pref-height: 60px;
+  -fx-background-insets: 0;
+  -fx-padding: 15px;
+  -fx-graphic: url('../SystemImages/SettingsIcon.png');
+}
+
+.fontawesome-icon {
+  -fx-fill: #FF6347;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+
+/* New styles for dropdown, radio buttons, and filter button */
+
+.combo-box {
+  -fx-background-color: rgba(255,255,255,0.2);
+  -fx-background-radius: 5;
+  -fx-border-color: white;
+  -fx-border-radius: 5;
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 14px;
+  -fx-text-fill: white;
+  -fx-padding: 5 10 5 10;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+
+.radio-button {
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 14px;
+  -fx-text-fill: white;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+
+.button-filter {
+  -fx-background-color: linear-gradient(to bottom right, #FF0000, #FF6347);
+  -fx-border-color: white;
+  -fx-border-width: 2px;
+  -fx-background-radius: 5;
+  -fx-border-radius: 5;
+  -fx-font-family: "Roboto", sans-serif;
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-text-fill: white;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}

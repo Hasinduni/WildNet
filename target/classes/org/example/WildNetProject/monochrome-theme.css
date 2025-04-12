@@ -1,0 +1,28 @@
+.root {
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+
+.vbox1 {
+    -fx-background-color: #bbb;
+}
+
+.nav-button {
+    -fx-background-color: #ccc;
+    -fx-text-fill: #000;
+}
+
+.vbox2 {
+    -fx-background-color: #ddd;
+    -fx-text-fill: #000;
+}
+
+.toggle-button {
+    -fx-background-color: #eee;
+    -fx-text-fill: #000;
+}
+
+.mode-button {
+    -fx-background-color: #ccc;
+    -fx-text-fill: #000;
+}

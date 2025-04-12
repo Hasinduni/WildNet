@@ -1,0 +1,39 @@
+/* General Styles */
+.grid-pane {
+    -fx-padding: 20px;
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E0E0E0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+}
+
+.text-label {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-size: 18px;
+    -fx-text-fill: #333;
+}
+
+.input-field {
+    -fx-font-size: 16px;
+    -fx-background-color: #FAFAFA;
+    -fx-border-color: #E0E0E0;
+    -fx-border-width: 1;
+    -fx-border-radius: 5;
+    -fx-padding: 5 10;
+}
+
+.action-button {
+    -fx-background-color: #6200EA;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-background-radius: 5;
+    -fx-padding: 10 20;
+}
+
+.action-button:hover {
+    -fx-background-color: #3700B3;
+}
+
+.action-button:pressed {
+    -fx-background-color: #1A237E;
+}

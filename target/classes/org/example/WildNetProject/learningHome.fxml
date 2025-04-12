@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane styleClass="mainpane" stylesheets="@cssFiles/learningHome.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.WildNetProject.learningHomeController">
+   <children>
+      <HBox alignment="CENTER" onMouseClicked="#goToDashboard">
+         <VBox prefHeight="126.0" prefWidth="0.0" />
+            <FontAwesomeIcon glyphName="HOME" layoutX="21.0" layoutY="83.0" size="80" stroke="WHITE" tabSize="20" text="" textAlignment="CENTER" wrappingWidth="151.6455841064453" />
+      </HBox>
+      <Text fill="WHITE" layoutX="438.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Learning Center" textAlignment="CENTER" wrappingWidth="582.0">
+         <font>
+            <Font name="System Bold" size="70.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="searchField" focusColor="WHITE" layoutX="24.0" layoutY="135.0" prefHeight="41.0" prefWidth="443.0" promptText="What you want to know ?" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton id="button-search" buttonType="RAISED" layoutX="484.0" layoutY="137.0" onAction="#search" prefHeight="20.0" prefWidth="96.0" ripplerFill="#ee0000" style="-fx-background-color: black; -fx-border-radius: 5px; -fx-border-color: white;" styleClass="button-search" stylesheets="@cssFiles/learningHome.css" text="Search" textFill="WHITE" />
+      <Button layoutX="484.0" layoutY="219.0" mnemonicParsing="false" onAction="#loadButtons" text="Wildlife" />
+      <Button fx:id="animals" layoutX="71.0" layoutY="319.0" mnemonicParsing="false" onAction="#loadButtons" text="Animals" />
+      <Button fx:id="plants" layoutX="402.0" layoutY="332.0" mnemonicParsing="false" onAction="#loadButtons" text="Plants" />
+      <Button fx:id="fungi" layoutX="626.0" layoutY="328.0" mnemonicParsing="false" onAction="#loadButtons" text="Fungi" />
+      <Button fx:id="microorganisms" layoutX="855.0" layoutY="323.0" mnemonicParsing="false" onAction="#loadButtons" text="Microorganisms">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <Button fx:id="terrestrial" layoutX="32.0" layoutY="420.0" mnemonicParsing="false" onAction="#loadButtons" text="Terrestial" />
+      <Button fx:id="aquatic" layoutX="98.0" layoutY="490.0" mnemonicParsing="false" onAction="#loadButtons" text="Aquatic" />
+      <Button fx:id="aerial" layoutX="213.0" layoutY="422.0" mnemonicParsing="false" onAction="#loadButtons" text="Aerial" />
+      <Button fx:id="flowering" layoutX="352.0" layoutY="427.0" mnemonicParsing="false" onAction="#loadButtons" text="Flowering" />
+      <Button fx:id="nonflowering" layoutX="485.0" layoutY="426.0" mnemonicParsing="false" onAction="#loadButtons" prefHeight="54.0" prefWidth="143.0" text="Non-Flowering" />
+      <Button fx:id="mushroom" layoutX="653.0" layoutY="408.0" mnemonicParsing="false" onAction="#loadButtons" text="Mushroom" />
+      <Button fx:id="molds" layoutX="653.0" layoutY="483.0" mnemonicParsing="false" onAction="#loadButtons" text="Molds" />
+      <Button fx:id="yeast" layoutX="652.0" layoutY="560.0" mnemonicParsing="false" onAction="#loadButtons" text="Yeast" />
+      <Button fx:id="bacteria" layoutX="894.0" layoutY="388.0" mnemonicParsing="false" onAction="#loadButtons" text="Bacteria" />
+      <Button fx:id="archaea" layoutX="894.0" layoutY="448.0" mnemonicParsing="false" onAction="#loadButtons" text="Archaea" />
+      <Button fx:id="protozoa" layoutX="894.0" layoutY="508.0" mnemonicParsing="false" onAction="#loadButtons" text="Protozoa" />
+      <Button fx:id="algae" layoutX="894.0" layoutY="567.0" mnemonicParsing="false" onAction="#loadButtons" text="Algea" />
+      <Polyline fill="#ffffff00" layoutX="379.0" layoutY="249.0" points="104.99996948242188, 8.71905517578125, -48.2857666015625, 8.71905517578125, -249.7500457763672, 8.71905517578125, -249.75003051757812, 72.00003051757812" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="412.0" layoutY="267.0" points="123.2171630859375, 6.0, 75.6583251953125, 26.0, 14.167877197265625, 26.0, 14.167877197265625, 66.68008422851562" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="412.0" layoutY="267.0" points="132.0, 6.0, 174.3428955078125, 26.0, 240.24908447265625, 26.0, 240.24908447265625, 61.000030517578125" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="412.0" layoutY="267.0" points="193.36639404296875, -9.28094482421875, 313.452392578125, -9.28094482421875, 505.72320556640625, -9.28094482421875, 505.7232666015625, 56.4036865234375" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="412.0" layoutY="285.0" points="-259.7500305175781, 87.99996948242188, -319.079833984375, 109.45065307617188, -319.079833984375, 109.45065307617188, -320.0, 135.0" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="422.0" layoutY="277.0" points="-269.7500305175781, 95.99996948242188, -269.7500305175781, 95.99996948242188, -235.61524963378906, 140.04107666015625, -235.61524963378906, 213.0" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="422.0" layoutY="277.0" points="29.989227294921875, 109.0, 29.989227294921875, 109.0, -19.947540283203125, 119.82858276367188, -43.78875732421875, 148.00003051757812" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="422.0" layoutY="277.0" points="39.999969482421875, 109.0, 39.999969482421875, 109.0, 91.815673828125, 121.01754760742188, 117.9730224609375, 149.00003051757812" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Line endX="100.0" startX="-100.0" />
+      <Polyline fill="#ffffff00" layoutX="433.0" layoutY="287.0" points="221.0, 148.00003051757812, 221.0, 148.00003051757812, 193.99993896484375, 148.00003051757812, 193.99993896484375, 95.0" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="433.0" layoutY="333.0" points="220.0, 177.0, 220.0, 177.0, 194.99993896484375, 177.0, 193.99993896484375, 66.99996948242188" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="434.0" layoutY="381.0" points="218.0, 206.0, 218.0, 206.0, 193.99993896484375, 206.0, 193.99993896484375, 66.99996948242188" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="443.0" layoutY="297.0" points="452.0001220703125, 124.79696655273438, 452.0001220703125, 124.79696655273438, 425.99993896484375, 124.79696655273438, 425.99993896484375, 80.0" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="443.0" layoutY="344.0" points="452.0001220703125, 139.6234130859375, 452.0001220703125, 139.6234130859375, 425.99993896484375, 139.6234130859375, 426.0, 54.000030517578125" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="443.0" layoutY="392.0" points="452.0001220703125, 152.26092529296875, 452.0001220703125, 152.26092529296875, 425.99993896484375, 152.26092529296875, 426.0, 54.000030517578125" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="443.0" layoutY="441.0" points="452.0001220703125, 157.95355224609375, 452.0001220703125, 157.95355224609375, 425.99993896484375, 157.95355224609375, 426.0, 54.000030517578125" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+      <Polyline fill="#ffffff00" layoutX="432.0" layoutY="287.0" points="-241.0, 67.99996948242188, -241.0, 67.99996948242188, -161.13970947265625, 67.99996948242188, -161.13970947265625, 135.00003051757812" stroke="#0030ee" strokeType="INSIDE" strokeWidth="5.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.food-chain-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 60vh; /* Controlled height for better management */
+    margin: 20px 0;
+    overflow-y: auto; /* Scrollable content */
+}
+
+.animals, .levels {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    max-height: 60vh;
+    overflow-y: auto; /* Scrollability for each section */
+}
+
+.animal, .level {
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.animal img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#level-result {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#submit-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #45a049;
+}

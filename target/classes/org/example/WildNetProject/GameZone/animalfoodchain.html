@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Food Chain Game</title>
+    <link rel="stylesheet" href="animal-food-chain.css">
+</head>
+<body>
+    <header>
+        <h1>Animal Food Chain Game</h1>
+    </header>
+    <div class="food-chain-container">
+        <div class="animals">
+            <!-- Initial Food Chain Level -->
+            <div class="animal" draggable="true" data-level="producer"><img src="images/grass.jpg" alt="Grass"></div>
+            <div class="animal" draggable="true" data-level="primary-consumer"><img src="images/rabbit.jpg" alt="Rabbit"></div>
+            <div class="animal" draggable="true" data-level="secondary-consumer"><img src="images/fox.jpg" alt="Fox"></div>
+            <div class="animal" draggable="true" data-level="tertiary-consumer"><img src="images/eagle.jpg" alt="Eagle"></div>
+        </div>
+        <div class="levels">
+            <div class="level" data-level="producer">Producers</div>
+            <div class="level" data-level="primary-consumer">Primary Consumers</div>
+            <div class="level" data-level="secondary-consumer">Secondary Consumers</div>
+            <div class="level" data-level="tertiary-consumer">Tertiary Consumers</div>
+        </div>
+    </div>
+    <div id="level-result"></div>
+    <button id="submit-button">Submit Classification</button>
+    <br>
+    <footer>
+        <p>Developed By The WildNet Team Using AI</p>
+    </footer>
+    <script src="animal-food-chain.js"></script>
+</body>
+</html>
