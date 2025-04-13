@@ -1,22 +1,23 @@
-WildNet – Desktop Wildlife Information and Game Application
+WildNet – Desktop Wildlife Education & Game Application
 Overview
-WildNet is a desktop-based wildlife education platform designed to promote awareness of wildlife through interactive learning experiences. The application allows users to browse animal profiles, view images, and engage in educational quizzes and puzzles. It combines a user-friendly interface with a dynamic backend to provide a comprehensive learning experience.
+WildNet is an interactive desktop platform designed to educate users about wildlife. It combines detailed animal profiles with engaging quizzes and puzzles to enhance awareness of various species. The application leverages a sleek, user-friendly interface built with JavaFX, while MySQL manages dynamic data and game scores.
 
-Features
-Animal Information: View detailed animal profiles including descriptions, images, and key facts.
+Key Features
+Animal Profiles: Access detailed information, images, and fun facts about various animals.
 
-Interactive Games: Quizzes and puzzles designed to test wildlife knowledge and provide educational content.
+Interactive Games: Participate in quizzes and puzzles to test and expand your wildlife knowledge.
 
-Dynamic Data Management: Uses MySQL to manage animal data, user interactions, and game scores.
+Score Tracking: Track and display your quiz/puzzle scores in real-time.
 
-Rich Educational Content: Integrates HTML/CSS/JavaScript via JavaFX WebView to display engaging web-based materials like articles, images, and videos.
+Educational Content: View rich HTML, CSS, and JavaScript-based content for in-depth learning.
 
-Technologies Used
-Java: Core programming language for application logic and backend operations.
+Dynamic Backend: Powered by MySQL to store animal data, user interactions, and scores.
 
-JavaFX: Framework for building the user interface, providing a modern and responsive design.
+Tech Stack
+Java (Backend & Logic)
 
-MySQL: Database used to manage animal data, user profiles, and game scores.
+JavaFX (User Interface)
 
-HTML/CSS/JavaScript: Frontend technologies used to display educational content via JavaFX WebView.
+MySQL (Database Management)
 
+HTML, CSS, JavaScript (Web Content Integration via JavaFX WebView)
